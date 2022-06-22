@@ -1,9 +1,9 @@
-#¿Quienes somos? FutManager
--FutManager es un sitio enfocado en impulsar la carrera de futbolistas, dandoles mayor visibilidad y alcance para que puedan ser contratados por un club.
--Apuntamos a aquellos clubes que no se pueden trasladar fisicamente hacia todos los centros de entrenamientos, por eso somos la mejor opcion online.
+# ¿Quienes somos? FutManager
+- FutManager es un sitio enfocado en impulsar la carrera de futbolistas, dandoles mayor visibilidad y alcance para que puedan ser contratados por un club.
+- Apuntamos a aquellos clubes que no se pueden trasladar fisicamente hacia todos los centros de entrenamientos, por eso somos la mejor opcion online.
 
-##Integrantes del equipo
--Cristian Gurrieri, 27 años, futuro desarrollador full stack.
+## Integrantes del equipo
+- Cristian Gurrieri, 27 años, futuro desarrollador full stack.
 
 
 ##Listado de referentes:
