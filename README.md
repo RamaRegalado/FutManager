@@ -5,6 +5,7 @@
 
 ## Integrantes del equipo
 - Cristian Gurrieri, 27 años, futuro desarrollador full stack.
+- Ramiro Regalado, 28 años, productor y programador.
 
 
 ## Listado de referentes:
