@@ -1,0 +1,23 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "![logo](https://cdn.futmanager.com/includes/imagens/futmanager_logo.png)\r # ¿Quienes somos? FutManager \r - FutManager es un sitio enfocado en impulsar la carrera de futbolistas, dandoles mayor visibilidad y alcance para que puedan ser contratados por un club.\r - Apuntamos a aquellos clubes que no se pueden trasladar fisicamente hacia todos los centros de entrenamientos, por eso somos la mejor opcion online.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamaRegalado/GRUPO-10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamaRegalado/GRUPO-10/issues"
+  },
+  "homepage": "https://github.com/RamaRegalado/GRUPO-10#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.18"
+  }
+}

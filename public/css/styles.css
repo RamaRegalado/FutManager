@@ -1,0 +1,49 @@
+/*------------ HEADER -------------- */
+header {
+    display: flex;
+    flex: row;
+    background-color: grey;
+}
+header nav {
+    padding-top: 30px;
+    margin-left: 30px;
+    padding-left: 50px;
+}
+
+header nav a{
+    margin: 20px;
+}
+header img{
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 20px
+    ;
+}
+header div{
+    display: flex;
+    flex: row;
+    box-sizing: border-box;
+}
+header input{
+    height: 0.5px;
+    width: 150px;
+    padding-top: 30px;
+    margin-top: 20px;
+    text-align:center;
+}
+/*------------------ FOOTER ------------- */
+footer {
+    display: flex;
+    flex: row;
+    box-sizing: border-box;
+    background-color: rgb(190, 190, 190);
+}
+footer div{
+    padding-top: 30px;
+    margin-left: 30px;
+    padding-left: 50px;
+}
+.redes{
+    display: flex;
+    flex: row;
+}
