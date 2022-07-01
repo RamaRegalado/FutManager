@@ -1,5 +1,8 @@
 /*------------ HEADER -------------- */
 header {
+    
+    align-items: center;
+    width: 100vw;
     display: flex;
     flex: row;
     background-color: grey;
@@ -12,6 +15,7 @@ header nav {
 
 header nav a{
     margin: 20px;
+    border: solid 1px black;
 }
 header img{
     padding-left: 20px;
@@ -33,10 +37,16 @@ header input{
 }
 /*------------------ FOOTER ------------- */
 footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    align-items: center;
     display: flex;
     flex: row;
     box-sizing: border-box;
     background-color: rgb(190, 190, 190);
+
 }
 footer div{
     padding-top: 30px;
@@ -46,4 +56,32 @@ footer div{
 .redes{
     display: flex;
     flex: row;
+}
+
+/* ------------BODY---------------- */
+main{
+/* text-align: center; */
+height:80vh;
+text-align:center;
+background-color: aqua;
+display: flex; 
+align-items:center;
+justify-content: center;
+}
+
+main article{
+    width: 90%;
+    height: 90%;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px black;
+}
+
+main article div{
+    background-color: grey;
+    position: relative;
+    top: 37%;
+    display:list-item;
+}
+main article div h2{
+    background-color: ;
 }
