@@ -21,6 +21,64 @@
             
             </header>
 
+            <main>
+                <div>
+                    <iframe src="https://www.youtube.com/watch?v=x9XC7pAyJGg" width=90% height=30%></iframe>
+                    <form  action="/" id="" name="formulario" method="GET">
+                        <div>
+                           <label id="nombres">Nombre Completo(letras)</label><br>
+                           <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required=""><br>      
+                           <label for="email">Email</label><br>
+                           <input type="email" value="" id="email" name="email" placeholder="name@domain.com" required="">
+                           <br>
+                           <label for="numeros">Numero Telefono</label><br> 
+                           <input type="text" name="contraseña" pattern="[0-9]+" required="" id="numeros" placeholder="telefono" minlength="6" maxlength="10">
+                        </div>
+                         <div>
+                          <label for="dropdown">posion en la que juegas</label> <br>
+                          <select id="dropdown" class="control" name="indice">
+                           <option value="-1" selected="">Seleccione...</option>
+                           <option value="1">portero</option>
+                           <option value="2">defensa</option>
+                           <option value="3">mediocampista</option>
+                           <option value="4">delantero</option>
+                         </select>
+                         </div>
+                          <div id="radio">
+                            <legent> Perfil que Manejas </legent><br>
+                              <label id="acepto"><input class="form-check-input" name="acepto" type="radio" id="acepto"> 
+                              Derecho </label> <br>
+                             <label for="radio2"><input type="radio" id="radio2" value="first_checkbox">Izquierdo</label><br>
+                                <input type="radio" id="radio3" value="second_checkbox"> <label for="radio3">Ambidiestro</label>
+                          </div>
+                          <div>
+                           <legent> Selecciona un Rango de Edad en Años </legent><br>
+                          <select id="dropdown" class="control" name="indice">
+                           <option value="-1" selected="">Seleccione...</option>
+                           <option value="1">15 a 17</option>
+                           <option value="2">18 a 20</option>
+                           <option value="3">21 a 23</option>
+                         </select>
+                         </div> 
+                          <div id="radio">
+                            <legent> Especifica tu posicion tactica </legent><br>
+                              <label id="acepto"><input class="form-check-input" name="acepto" type="checkbox" id="acepto"> 
+                              Lateral</label> <br>
+                             <label for="checkbox"><input type="checkbox" id="radio2" value="first_checkbox"> Central</label><br>
+                                <input type="checkbox" id="checkbox" value="second_checkbox"> <label for="radio3">Carrilero</label><br>
+                               <label for="checkbox"><input type="checkbox" id="radio2" value="first_checkbox">Volante central </label><br> 
+                          <label for="checkbox"><input type="checkbox" id="radio2" value="first_checkbox">Armador </label><br> 
+                          <label for="checkbox"><input type="checkbox" id="radio2" value="first_checkbox">Centro Delantero </label><br> 
+                          </div>
+                          <textarea colunm="30" rows="10" placeholder="describe tus caracteristicas"></textarea>
+                          
+                          <br>
+                      <button type="submit" class="siguiente" onclick="return enviar(this.form)">continuar</button>
+                    </form>
+
+                </div>
+
+            </main>
 
             <footer>
              <div> 
