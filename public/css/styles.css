@@ -35,28 +35,58 @@ header input{
     margin-top: 20px;
     text-align:center;
 }
+
+#noticias {
+    display: flex;
+    margin-top: 15px;
+    background-color: red;
+    padding: auto;
+}
+
+#image {
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+#fichajes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+
+}
+
 /*------------------ FOOTER ------------- */
+
 footer {
-    position: absolute;
+    display: flex;
+    background-color: rgb(190, 190, 190);
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+/* footer {
+    display: flex;
     bottom: 0px;
     left: 0px;
     width: 100vw;
-    align-items: center;
-    display: flex;
-    flex: row;
+    justify-content: center;
+    flex-direction: row;
     box-sizing: border-box;
     background-color: rgb(190, 190, 190);
+} */
 
-}
-footer div{
+
+/* footer div{
+    display: flex;
     padding-top: 30px;
     margin-left: 30px;
-    padding-left: 50px;
-}
-.redes{
-    display: flex;
-    flex: row;
-}
+    padding-left: 50px; */
+/* } */
+
 
 /* ------------BODY---------------- */
 main{
