@@ -99,19 +99,27 @@ align-items:center;
 justify-content: center;
 }
 
-main article{
+main .login{
     width: 90%;
     height: 90%;
     background-color: antiquewhite;
     box-shadow: 5px 5px 5px black;
 }
 
-main article div{
+main .login div{
     background-color: grey;
     position: relative;
     top: 37%;
     display:list-item;
 }
-main article div h2{
-    background-color: ;
+
+.formulario{
+    width: 95%;
+    height: 95%;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
