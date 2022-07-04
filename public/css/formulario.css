@@ -80,28 +80,22 @@ header input{
     }
     
 
-   #footer {
-        display: flex;
-        flex-direction: row;
-       
-        background-color: rgb(190, 190, 190);
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 10px;
-        
-    }
-    
-    .redes {
-        display: flex;
-        flex-direction: row;
-     
-    }
-    .redes p{
+   footer {
+        /* display: flex;
+        flex-direction: row; */
+        background-color: rgb(190, 190, 190);   
+   }
 
-        margin-left: 100px;
-        padding-top:20px ;
-    }
-    @media (max-width: 400px) {
+   #redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+   }
+    
+    
+    
+    @media (max-width: 412px) {
         header {
             display: flex;
             flex-direction: column;
@@ -117,18 +111,62 @@ header input{
             margin-right:100px ;
 
         }
-        footer{
-            display: flex;
-            flex-direction: column;
-        }
-        #footer{
+        
+         #footer{
             display: flex;
             flex-direction: column;
             align-items: center;
 
-        }
-       
+        } 
+        
+        #redes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+     }   
+
+    }
+
+    @media (min-width: 412px )and (max-width:700px){
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            width: 90vw;
+            
+            /* flex-wrap: wrap; */
+          
+        } 
+        header nav a{
+            display: flex;
+            flex-direction: column;
+           
+            margin-right:100px ;
 
         }
+        
+         #footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        } 
+        
+        #redes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;    
+     }   
+
+    }
+    @media (min-width: 700px )and (max-width:1024px){
+        header {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+           }
+
+    }
 
 
