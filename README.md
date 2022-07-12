@@ -6,6 +6,7 @@
 ## Integrantes del equipo
 - Cristian Gurrieri, 27 años, futuro desarrollador full stack.
 - Ramiro Regalado, 28 años, productor y programador.
+- Roque Alberto Olaya Samudio, 51 años, futuro desarrollador full stack.
 
 ## Lista de enlaces del proyecto:
 - Tablero de trabajo: https://trello.com/b/Phn4alCE/grupo-10-futmanager
