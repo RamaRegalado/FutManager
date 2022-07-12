@@ -22,3 +22,15 @@ app.get("/login", (req, res)=>{
 app.get("/formulario", (req, res)=>{
     res.sendFile(__dirname + "/views/formulario.html")
 })
+
+app.get("/nosotros", (req, res)=>{
+    res.sendFile(__dirname + "/views/nosotros.html")
+})
+
+app.get("/carrito", (req, res)=>{
+    res.sendFile(__dirname + "/views/carrito.html")
+})
+
+app.get("/producto", (req, res)=>{
+    res.sendFile(__dirname + "/views/producto.html")
+})

@@ -106,14 +106,14 @@ align-items:center;
 justify-content: center;
 }
 
-main .login{
+main .body{
     width: 90%;
     height: 90%;
     background-color: antiquewhite;
     box-shadow: 5px 5px 5px black;
 }
 
-main .login div{
+main .body div{
     margin-left: 300px;
     margin-right: 300px;
     background-color: grey;
@@ -122,10 +122,46 @@ main .login div{
     top: 30%;
     font-size: larger;
 }
-main .login div .ingresar{
+main .body div .ingresar{
     font-size: larger;
 }
-.login div .ingresar:hover{
+.body div .ingresar:hover{
     background-color: blue;
     color: white;
+}
+
+
+main .body .nosotros{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: grey;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+    top: 10%;
+    font-size:x-large;
+}
+
+.productos{
+    display: block;
+    box-sizing: border-box;
+    border: solid red 2px;
+    width: 90%;
+    height: 90%;
+}
+.jugadores {
+    display: flex;
+    flex-direction: row;
+    background-color: green;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.jugador{
+    /* width: 50% ; */
+    /* justify-content: center; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    /* position: relative; */
+    /* padding: 15%; */
+    border: solid black 2px;
 }
