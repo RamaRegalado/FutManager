@@ -34,3 +34,7 @@ app.get("/carrito", (req, res)=>{
 app.get("/producto", (req, res)=>{
     res.sendFile(__dirname + "/views/producto.html")
 })
+
+app.get("/jugador", (req, res)=>{
+    res.sendFile(__dirname + "/views/jugador.html")
+})
