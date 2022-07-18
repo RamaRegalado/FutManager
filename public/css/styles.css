@@ -1,46 +1,49 @@
 /*------------ HEADER -------------- */
 header {
+    justify-content: space-around;    
+        align-items: center;
+        width: 100vw;
+        display: flex;
+        flex: row;
+        background-color: grey;
+    }
     
-    align-items: center;
-    width: 100vw;
-    display: flex;
-    flex: row;
-    background-color: grey;
-}
-header nav {
-
-    padding-top: 30px;
-    margin-left: 30px;
-    padding-left: 50px;
-}
-
-header nav a{
-    margin: 20px;
-    border: solid 1px black;
-}
-header img{
-    padding-left: 20px;
-    padding-top: 10px;
-    margin-left: 20px
-    ;
-}
-header div{
-    display: flex;
-    flex: row;
-    box-sizing: border-box;
-}
- header div input{
-    height: 0.5px;
-    width: 150px;
-    padding-top: 30px;
-    margin-top: 20px;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      text-align: center;
-    /*  text-align:center;
-    */
-    } 
+    header nav {
+    
+        padding-top: 30px;
+        margin-left: 30px;
+        padding-left: 50px;
+    }
+    
+    header nav a{
+        margin: 20px;
+        border: solid 1px black;
+    }
+    header img{
+        padding-left: 20px;
+        padding-top: 10px;
+        margin-left: 20px;
+        position: relative;
+        right: 80px;
+        ;
+    }
+    header div{
+        display: flex;
+        flex: row;
+        box-sizing: border-box;
+        
+    }
+     header div input{
+        height: 0.5px;
+        width: 150px;
+        padding-top: 30px;
+        margin-top: 20px;
+          /* position: absolute;
+          top: 20px;
+          right: 20px; */
+        /*  text-align:center;
+        */
+        } 
 
 #noticias {
     display: flex;
@@ -82,7 +85,7 @@ footer {
 /* ------------BODY---------------- */
 main{
 /* text-align: center; */
-height:80vh;
+height:90vh;
 text-align:center;
 background-color: aqua;
 display: flex; 
@@ -106,10 +109,10 @@ main .body div{
     top: 30%;
     font-size: larger;
 }
-main .body div .button{
+.button{
     font-size: larger;
 }
-.body div .button:hover{
+.button:hover{
     background-color: blue;
     color: white;
 }
@@ -148,10 +151,48 @@ main .body .nosotros{
     /* position: relative; */
     /* padding: 15%; */
     border: solid black 2px;
+    margin: 5px;
+    padding: 50px;
 }
 
 /* -----------------JUGADOR-------------- */
 
-.detalle-jugador{
-    display: inline-block;
+.caracteristicas-jugador{
+    /* border: solid 2px red; */
+    padding: 30px;
+    font-size:x-large;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    }
+.caracteristicas-jugador ul{
+    list-style-type: none
+}
+
+#Jugador{
+height: 80vh;
+}
+.jugador-ind{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    /* border: solid red 2px; */
+    width: 90%;
+    height: 90%;
+}
+.jugador-foto{
+    /* width: 50% ; */
+    /* justify-content: center; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    /* position: relative; */
+    /* padding: 15%; */
+    border: solid black 2px;
+    margin: 5px;
+    padding: 5px;
+}
+/* ---------------------Jugadores--------------- */
+
+#catalogo{
+    height:90%;
 }
