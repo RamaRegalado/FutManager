@@ -23,6 +23,7 @@ app.get("/formulario", (req, res)=>{
     res.sendFile(__dirname + "/views/formulario.html")
 })
 
+app.set("view engine","ejs");
 app.get("/nosotros", (req, res)=>{
     res.sendFile(__dirname + "/views/nosotros.html")
 })
