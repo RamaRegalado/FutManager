@@ -10,7 +10,8 @@
 <body>
     <!-- --------------------HEADER------------------ -->
     <header>
-    <a href="/"><img src="/images/futmanager_logo.png" alt="Logo"></a>
+        <%- include("parcial/head.ejs")%>
+    <!-- <a href="/"><img src="/images/futmanager_logo.png" alt="Logo"></a>
     <div>
         <nav> 
             <a href="/">Inicio</a>
@@ -20,27 +21,26 @@
             <a href="/login">Ingresar</a>  
         </nav>
     </div>
-    <input class="navegador" type="text" >
+    <input class="navegador" type="text" > -->
     </header>
-<div id="noticias">
-    <a id="image" href="/"><img src="/images/fichajes1.jpg" alt="Noticias" width="80%" height="80%"></a>
-</div>
-<div id="fichajes">
-  <div>
-<a href="/"><img src="/images/kane.jpg" alt="Noticias" width="50%" height="50%"></a>
-<p></p> </div>
-    <div>
-    <a href="/"><img src="/images/pogba.jpg" alt="Fichaje2" width="50%" height="50%"></a>
-    <p></p>
-    </div>
-    <div>
-            <a href="/"><img src="/images/mbape.jpg" alt="fichaje3" width="50%" height="50%"></a>
-            <p></p></div>
-</div>
-
-       <!-- ---------------------FOOTER--------------------------- -->
-       <footer>
-        <div id="footer"> 
+    <!-- -----------------------BODY------------------------- -->
+    <main>
+        <article  class="body">
+            <div>
+                <h1>Ingresa a tu Perfil</h1>
+                <label id="email">E-mail</label><br>
+                <input type="email"  id="email" name="email" required=""><br>
+                <br>
+                <label id="password">Contraseña</label><br>
+                <input type="password"  id="password" name="password" required=""><br>      
+                <br>
+                <button type="submit"  class="button">Ingresar</button></div>
+            </article>
+            </main>
+    <!-- ---------------------FOOTER--------------------------- -->
+    <footer>
+        <%- include("parcial/footer.ejs")%>
+        <!-- <div id="footer"> 
          <div id="redes">
               <a href="/"><img src="/images/futmanager_logo.png" width="120px" alt="Logo"></a>    
                
@@ -48,7 +48,7 @@
                  <p><img src="/images/linkedin.jpg" width="20px" height="20px"  alt="Linkedin" >Linkedin</p>
                  <p><img src="/images/facebook.png" width="20px" height="20px" alt="Facebook" >Facebook</p>
                </div>
-         </div>
+         </div> -->
        </footer>
        </body>
 </html>

@@ -10,7 +10,8 @@
 <body>
     <!-- --------------------HEADER------------------ -->
     <header>
-    <a href="/"><img src="/images/futmanager_logo.png" alt="Logo"></a>
+        <%- include("parcial/head.ejs")%>
+    <!-- <a href="/"><img src="/images/futmanager_logo.png" alt="Logo"></a>
     <div>
         <nav> 
             <a href="/">Inicio</a>
@@ -20,7 +21,7 @@
             <a href="/login">Ingresar</a>  
         </nav>
     </div>
-    <input class="navegador" type="text" >
+    <input class="navegador" type="text" > -->
     </header>
     <!-- -----------------------BODY------------------------- -->
     <main id="Jugador">
@@ -51,7 +52,8 @@
     </main>
         <!-- ---------------------FOOTER--------------------------- -->
         <footer>
-    <div id="footer"> 
+            <%- include("parcial/footer.ejs")%>
+    <!-- <div id="footer"> 
         <div id="redes">
             <a href="/"><img src="/images/futmanager_logo.png" width="120px" alt="Logo"></a>    
             
@@ -59,28 +61,8 @@
             <p><img src="/images/linkedin.jpg" width="20px" height="20px"  alt="Linkedin" >Linkedin</p>
              <p><img src="/images/facebook.png" width="20px" height="20px" alt="Facebook" >Facebook</p>
            </div>
-     </div>
+     </div> -->
    </footer>
    </body>
 </html>
 <!-- 
-
-
-
-
-<article class="detalle-jugador">
-    <div class="foto-jugador">    
-        <img src="/images/mbape.jpg" width="30px" height="30px">
-    </div>
-<div class="caracteristicas-jugador">
-<ul>
-    <li>Nombre Completo: Roque</li>
-    <li>Estatura: 1.80</li>
-    <li>Fecha de Nacimiento: 17/06/2010</li>
-    <li>Posición: Arquero</li>
-    <li>Perfil Dominante: Delantero</li>
-    <li>Características: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nostrum commodi, a laborum recusandae similique, maiores aut eaque ab doloribus aliquid modi minus nobis quidem quasi ad minima suscipit. Quod.</li>
-</ul>
-<button type="submit"  class="button">Contactar!</button>
-</div>   
-</article> -->

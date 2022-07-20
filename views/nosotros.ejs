@@ -10,7 +10,8 @@
 <body>
     <!-- --------------------HEADER------------------ -->
     <header>
-    <a href="/"><img src="/images/futmanager_logo.png" alt="Logo"></a>
+        <%- include("parcial/head.ejs")%>
+    <!-- <a href="/"><img src="/images/futmanager_logo.png" alt="Logo"></a>
     <div>
         <nav> 
             <a href="/">Inicio</a>
@@ -20,7 +21,7 @@
             <a href="/login">Ingresar</a>  
         </nav>
     </div>
-    <input class="navegador" type="text" >
+    <input class="navegador" type="text" > -->
     </header>
     <!-- -----------------------BODY------------------------- -->
     <main>
@@ -43,7 +44,8 @@
     </main>
     <!-- ---------------------FOOTER--------------------------- -->
     <footer>
-        <div id="footer"> 
+        <%- include("parcial/footer.ejs")%>
+        <!-- <div id="footer"> 
          <div id="redes">
               <a href="/"><img src="/images/futmanager_logo.png" width="120px" alt="Logo"></a>    
                
@@ -51,7 +53,7 @@
                  <p><img src="/images/linkedin.jpg" width="20px" height="20px"  alt="Linkedin" >Linkedin</p>
                  <p><img src="/images/facebook.png" width="20px" height="20px" alt="Facebook" >Facebook</p>
                </div>
-         </div>
+         </div> -->
        </footer>
        </body>
 </html>
