@@ -1,13 +1,40 @@
-<header>
-    <a href="/"><img src="/images/futmanager_logo.png" alt="Logo"></a>
-    <div>
-        <nav> 
-            <a href="/">Inicio</a>
-            <a href="/producto">Jugadores</a>
-            <a href="/nosotros">Sobre Nosotros</a>
-            <a href="/formulario">Registro</a>
-            <a href="/login">Ingresar</a>  
-        </nav>
+<header class="hero">
+           
+    <nav class="nav container">
+        <a href="/" class="logofut"><img src="/images/futmanager_logo.png" alt="Logo"></a>
+        <div class="buscador"><input type="text" name="search" placeholder="Buscar" class="src" autocomplete="off"></div>
+        <ul class="nav__link nav__link--menu">
+            <li class="nav__items">
+                <a href="/" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+                <a href="/producto" class="nav__links">Jugadores</a>
+            </li>
+            <li class="nav__items">
+                <a href="/nosotros" class="nav__links">Sobre Nosotros</a>
+            </li>
+            <li class="nav__items">
+                <a href="/formulario" class="nav__links">Registro</a>
+            </li>
+            <li class="nav__items">
+                <a href="/login" class="nav__links">Ingresar</a>
+            </li>
+
+            <img src="" alt="" class="nav__close">
+         </ul>
+
+         <div class="nav__menu">
+            <img src="./images/menu.svg" alt="" class="nav__img">
+         </div>
+    </nav>
+
+    <section class="hero__container container">
+        <h1 class="hero__title">Centro de entrenamiento</h1>
+        <p class="hero__paragraph">Enterate de todas las noticias de FutManager</p>
+        <a href="#" class="cta">Comenzar</a>
+    </section>
+
+    <div class="h4noticia">
+    <h4>Últimas noticias</h4>
     </div>
-    <input class="navegador" type="text" >
-   </header>
+</header>
