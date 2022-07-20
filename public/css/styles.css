@@ -136,14 +136,17 @@ input.src:hover{
     border-radius: 32px;
 }
 
+/* h4 ultimas noticias despues del header */
+
 .h4noticia{
     font-size: 1.5rem;
     color: black;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 0px;
 }
 
-/* About*/
+
+/* About main*/
 
 .about {
     text-align: center;
