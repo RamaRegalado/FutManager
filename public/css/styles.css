@@ -96,7 +96,7 @@ input.src:hover{
 .nav__menu {
   margin-left: auto;
   cursor: pointer;
-  display: none;
+ 
 }
 
 .nav__img {
@@ -565,13 +565,17 @@ height: 80vh;
  }   
 
 }
-@media (min-width: 700px )and (max-width:1024px){
-    header {
+*/
+@media (min-width: 700px ){
+    /* header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
+       } */
+       .nav__menu{
+        display: none;
        }
 
 }
 
- */
