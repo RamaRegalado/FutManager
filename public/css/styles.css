@@ -96,7 +96,7 @@ input.src:hover{
 .nav__menu {
   margin-left: auto;
   cursor: pointer;
-  display: none;
+ 
 }
 
 .nav__img {
@@ -300,12 +300,19 @@ align-items:center;
 justify-content: center;
 }  */ 
 
-main .body{
+/* #nosotros{
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+} */
+/* main .body{
+    margin-left: 80px;
+    margin-right: 20px;
     width: 90%;
     height: 90%;
-    background-color: antiquewhite;
+    background-color: green;
     box-shadow: 5px 5px 5px black;
-}
+} */
 
 main .body div{
     margin-left: 300px;
@@ -315,6 +322,9 @@ main .body div{
     position: relative;
     top: 30%;
     font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 main .body div .button{
     font-size: larger;
@@ -322,6 +332,9 @@ main .body div .button{
 .body div .button:hover{
     background-color: blue;
     color: white;
+}
+.ingreso{
+    padding: 20px;
 }
 
 
@@ -504,13 +517,17 @@ height: 80vh;
  }   
 
 }
-@media (min-width: 700px )and (max-width:1024px){
-    header {
+*/
+@media (min-width: 700px ){
+    /* header {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+
+       } */
+       .nav__menu{
+        display: none;
        }
 
 }
 
- */
