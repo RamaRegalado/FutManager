@@ -2,13 +2,12 @@ const { userInfo } = require("os");
 const path = require("path");
 const fs=require("fs");
 const { info } = require("console");
+const loginFilePath = path.join(__dirname, '../data/login.json');
 const productsFilePath = path.join(__dirname, '../data/book.json');
-//const products =require(productsFilePath)
-//const products = fs.readFileSync(productsFilePath, {encoding :"utf-8"});
 
-// const productsFilePath = path.join(__dirname, '../data/book.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-let info = JSON.parse(products);
+const login = JSON.parse(fs.readFileSync(loginFilePath, 'utf-8'));
+
 
 const mainController = {
   
@@ -17,6 +16,24 @@ const mainController = {
   },
 
   postlogin:(req,res)=>{
+    
+    let newLogin = {
+  
+  id:login[login.length - 1].id + 1,
+  
+  ...req.body
+  
+     }
+      //añade un dato
+      login.push(newLogin)
+     
+     res.send("recived");
+     
+     //toma un json (info)lo convierte en string
+     usuarioJson=JSON.stringify(login);
+     //crea el archivo json si no existe o si existe escribe en el,guarda el string(usuarioJson)en book.json
+     fs.writeFileSync("./data/login.json",usuarioJson,{encoding :"utf-8"});
+     
     
   },
 
@@ -27,17 +44,19 @@ const mainController = {
 console.log("PRUEBA")
 
 let newinfo = {
- // id:info[info.length - 1].id + 1,
- ...req.body
+
+ id:products[products.length - 1].id + 1,
+ 
+...req.body
   
 }
  //añade un dato
- info.push(newinfo)
+ products.push(newinfo)
 
 res.send("recived");
 
 //toma un json (info)lo convierte en string
-usuarioJson=JSON.stringify(info);
+usuarioJson=JSON.stringify(products);
 //crea el archivo json si no existe o si existe escribe en el,guarda el string(usuarioJson)en book.json
 fs.writeFileSync("./data/book.json",usuarioJson,{encoding :"utf-8"});
 
@@ -95,6 +114,7 @@ fs.writeFileSync("./data/book.json",usuarioJson,{encoding :"utf-8"});
   },
 
   login: (req, res) => {
+
     res.render("login");
   },
   nosotros: (req, res) => {

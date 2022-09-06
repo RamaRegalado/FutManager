@@ -27,16 +27,16 @@
     <main>
         <article  class="body">
             
-                <form action="/login.ejs" method="post" enctype="multipart/form-data">
+                <form action="/login" method="POST" enctype="multipart/form-data">
                 <h1>Ingresa a tu Perfil</h1>
-                <label id="email">E-mail</label><br>
+                <label for="email">E-mail</label><br>
                 <input type="email"  id="email" name="email" required=""><br>
                 <br>
-                <label id="password">Contraseña</label><br>
+                <label for="password">Contraseña</label><br>
                 <input type="password"  id="password" name="password" required=""><br>      
                 <br>
                 <label for="imagen-perfil" id="imagen-perfil">imagen-perfil</label><br>
-                <input type="file"  id="email" name="imagen-perfil" required=""><br>
+                <input type="file" id="email" name="imagen-perfil"><br>
                 <br>
                 <button type="submit"  class="button">Ingresar</button>
             </form>

@@ -35,8 +35,9 @@ router.get('/formulario', mainController.formulario);
 router.post('/formulario',upload.any(),mainController.new)
 
 router.get('/jugador', mainController.jugador);
+
 router.get('/login', mainController.login);
-// router.post('/login',upload.single("imagen-perfil"), mainController. postlogin);
+router.post('/login',upload.any(), mainController.postlogin);
 
 router.get('/nosotros', mainController.nosotros);
 router.get('/producto', mainController.producto);
