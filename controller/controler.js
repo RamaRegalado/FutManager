@@ -2,9 +2,13 @@ const { userInfo } = require("os");
 const path = require("path");
 const fs=require("fs");
 const { info } = require("console");
- const productsFilePath = path.join(__dirname, '../data/book.json');
-// const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const productsFilePath = path.join(__dirname, '../data/book.json');
+//const products =require(productsFilePath)
+//const products = fs.readFileSync(productsFilePath, {encoding :"utf-8"});
 
+// const productsFilePath = path.join(__dirname, '../data/book.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+let info = JSON.parse(products);
 
 const mainController = {
   
@@ -13,28 +17,51 @@ const mainController = {
   },
 
   postlogin:(req,res)=>{
-    let login=[]
-    const{ nombre,email,telefono,estatura}=req.body;
-    let newlogin = {
-      nombre,
-      email,
-      telefono,
-      estatura
-    }
-
-    info.push(newlogin);
     
-    res.send (login);
   },
-
-// nuevo:(req,res)=>{
-// res.render("new-emtry",{info})
-// },
 
 
   new:(req, res)=>{
-console.log(req.body)
+    
+//let info=[]
+console.log("PRUEBA")
 
+let newinfo = {
+ // id:info[info.length - 1].id + 1,
+ ...req.body
+  
+}
+ //añade un dato
+ info.push(newinfo)
+
+res.send("recived");
+
+//toma un json (info)lo convierte en string
+usuarioJson=JSON.stringify(info);
+//crea el archivo json si no existe o si existe escribe en el,guarda el string(usuarioJson)en book.json
+fs.writeFileSync("./data/book.json",usuarioJson,{encoding :"utf-8"});
+
+},
+//const{ nombre,email,telefono,estatura}=req.body;
+//let idUser=info;
+// let nuevoUsuario=fs.readFileSync("./data/book.json", {encoding :"utf-8"});
+//     let usuario;
+//     if(nuevoUsuario==""){
+     
+//       usuario=[];
+//     }
+//     else{
+//         usuario=JSON.stringify(nuevoUsuario);
+//     }
+   
+   //convierte a json un string. los datos que ya estan cargados asi no sobre escribe
+
+//le indico la ruta del archivo json que deseo leer, para leerla con fs y guardar en constate products
+
+//let info = JSON.parse(products);
+ //let info= products 
+
+//convierte a json un string. los datos que ya estan cargados asi no sobre escribe
 // store: (req, res) => {
 //   let image
 //   console.log(req.files);
@@ -44,7 +71,7 @@ console.log(req.body)
 //       image = 'default-image.png'
 //   }
 //   let newProduct = {
-//       id: products[products.length - 1].id + 1,
+//       id: usuarioJson[usuarioJson.length - 1].id + 1,
 //       ...req.body,
 //       image: image
 //   };
@@ -52,38 +79,7 @@ console.log(req.body)
 //   fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
 //   res.redirect('/');
 // }
-    // let newinfo={
-    //   id: newinfo[newinfo.length -1].id + 1,
-    //   ...req.body 
-    //  }
     
-    //let info=[]
-    //const{ nombre,email,telefono,estatura}=req.body;
-    
-    let newinfo = {
-      nombre:req.body.nombre,
-      email:req.body.email,
-      telefono:req.body.telefono,
-      estatura:req.body.estatura,
-    }
-
-    let nuevoUsuario=fs.readFileSync("./data/book.json", {encoding :"utf-8"});
-    let usuario;
-    if(nuevoUsuario==""){
-     
-      usuario=[];
-    }
-    else{
-        usuario=JSON.parse(nuevoUsuario);
-    }
-
-    usuario.push(newinfo);
-    
-    usuarioJson=JSON.stringify(usuario);
-    fs.writeFileSync("./data/book.json",usuarioJson);
-
-    res.render("");
-     },
 
   formulario: (req, res) => {
     
@@ -110,43 +106,5 @@ console.log(req.body)
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-//   carrito: (req, res) => {
-//     res.sendFile(path.join(__dirname, "../views/carrito.html"));
-//   },
-
-//   formulario: (req, res) => {
-//     res.sendFile(path.join(__dirname, "../views/formulario.html"));
-//   },
-
-//   home: (req, res) => {
-//     res.sendFile(path.join(__dirname, "../views/home.html"));
-//   },
-
-//   jugador: (req, res) => {
-//     res.sendFile(path.join(__dirname, "../views/jugador.html"));
-//   },
-
-//   login: (req, res) => {
-//     res.sendFile(path.join(__dirname, "../views/login.html"));
-//   },
-//   nosotros: (req, res) => {
-//     res.sendFile(path.join(__dirname, "../views/nosotros.html"));
-//   },
-//   producto: (req, res) => {
-//     res.sendFile(path.join(__dirname, "../views/producto.html"));
-//   },
-// };
 
 module.exports = mainController;
