@@ -6,21 +6,13 @@
         <link href="css/styles.css" rel="stylesheet">
         <title>Registro</title>
     </head>
+    <header>
+      <%- include("parcial/head.ejs")%>
+      
+  </header>   
+
     <body>
-            <header>
-              <%- include("parcial/head.ejs")%>
-                <!-- <a href="/"><img src="/images/futmanager_logo.png" alt="Logo"></a>
-                <div>
-                    <nav> 
-                        <a href="/">Inicio</a>
-                        <a href="/producto">Jugadores</a>
-                        <a href="/nosotros">Sobre Nosotros</a>
-                        <a href="/formulario">Registro</a>
-                        <a href="/login">Ingresar</a>  
-                    </nav>
-                </div>
-                <input class="navegador" type="text" > -->
-               </header>
+           
             
             <div id="formulario">
                     <div id="centrar">
@@ -38,7 +30,7 @@
                            <input type="number" name="telefono" pattern="[0-9]+" required="" id="numeros" placeholder="Télefono" minlength="6" maxlength="10">
                           <br>
                            <label for="estaura">Estatura:</label><br>
-                           <input type="number"  name="estaura" placeholder="Estatura en Métros" required="" min="0" step="0.01">
+                           <input type="number"  name="estatura" placeholder="Estatura en Métros" required="" min="0" step="0.01">
                            <br>
                            <br><label for="data">Fecha de Nacimiento</label><br>
                            <input type="date" name="data">
@@ -73,8 +65,8 @@
                             </select><br>
                             <label for="video">Ingresa un Video</label><br>
                            <input type="file" id="video" name="video" placeholder="subir video" ><br> 
-                           <label for="foto">Ingresa foto</label><br>
-                           <input type="file" id="foto" name="foto" placeholder="subi foto" ><br> 
+                           <label for="imagen">Ingresa foto</label><br>
+                           <input type="file" id="foto" name="imagen" placeholder="subir foto" ><br> 
                         </div>
 
                     </div>  
