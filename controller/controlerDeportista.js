@@ -4,38 +4,37 @@ const fs = require("fs");
 const { info } = require("console");
 
 const productsFilePath = path.join(__dirname, "../data/producto.json");
-const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+const products = JSON.parse(fs.readFileSync(productsFilePath, null, " ", "utf-8"));
 
 
 const productController = {
 
 formulario: (req, res) => {
-    res.render("formulario");
+    res.render("formularioDeportista");
   },  
   
 
-    create: (req, res) => {
+    createDeportista: (req, res) => {
         let newinfo = {
           id: products[products.length - 1].id + 1,
           ...req.body,  
-          imagen:req.file
+          imagen:req.file,
         };
         
         products.push(newinfo);
         res.redirect("manager");
-        //toma un json (info)lo convierte en string
+        //toma un json (info)lo convierte en string { encoding: "utf-8" }
         usuarioJson = JSON.stringify(products);
         //crea el archivo json si no existe o si existe escribe en el,guarda el string(usuarioJson)en book.json
-        fs.writeFileSync("./data/producto.json", usuarioJson, { encoding: "utf-8" });
+        fs.writeFileSync("./data/producto.json", usuarioJson,null," " ,);
       },
       manager: (req, res) => {
         res.render("manager",{products});
       },  
       edit: (req, res) => {
-        
-        let editar = products.find(moto=> moto.id == req.params.id);
-
-
+        const products = JSON.parse(fs.readFileSync(productsFilePath, "utf-8"));
+        let editar = products.find(element=> element.id == req.params.id);
+        console.log(editar)
         res.render("editar",{editar});
       },  
       show: (req,res) =>{
@@ -48,19 +47,35 @@ formulario: (req, res) => {
         }); res.render("deportistas",{description});
         
     },
-    update: (req,res) =>{
+    
+      update: (req, res) => {
+        
+        let id = req.params.id;
+        let productToEdit = products.find(product => product.id == id)
       
-      req.body.id = req.params.id;
-      //req.body.imagen = req.file ? req.file.filename : req.body.oldImagen;
-      let jugadorUpdate = products.map(element =>{
-          if(element.id == req.body.id){
-              return element = req.body;
+        productToEdit = {
+          id: productToEdit.id,
+          ...req.body,
+          
+        };console.log(productToEdit);
+     
+        
+        let newProducts = products.map(product => {
+          if (product.id == productToEdit.id) {
+            return product = {...productToEdit};
           }
-          return moto;
-      })
-      let actualizar = JSON.stringify(jugadorUpdate,null,2);
-      fs.writeFileSync(path.resolve(__dirname,'../data/producto.json'),actualizar)
-      res.redirect('/manager');
+          return product;
+        })
+      
+    
+        fs.writeFileSync(productsFilePath, JSON.stringify(newProducts, null, ' '));
+        res.redirect('/manager');
+      
+
+      // let actualizar = JSON.stringify(jugadorUpdate );
+      // console.log(actualizar);
+      // fs.writeFileSync(path.join(__dirname,'../data/producto.json'),actualizar)
+      // res.redirect('/manager');
   },
 
   destroy: (req,res) =>{

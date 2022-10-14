@@ -1,0 +1,9 @@
+el usuario ingreso a la ruta /favicon.ico
+el usuario ingreso a la ruta /registroManager
+el usuario ingreso a la ruta /registroManager
+el usuario ingreso a la ruta /deportistas/images/menu.svg
+el usuario ingreso a la ruta /public/css/styles.css
+el usuario ingreso a la ruta /editar/images/menu.svg
+el usuario ingreso a la ruta /public/css/styles.css
+el usuario ingreso a la ruta /editar/images/menu.svg
+el usuario ingreso a la ruta /deportistas/images/menu.svg

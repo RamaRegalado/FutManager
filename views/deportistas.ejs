@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    
     <title>Document</title>
 </head>
 
@@ -17,13 +17,18 @@
     <header>
         <%- include("parcial/head.ejs")%>
         
-    </header>   
+    </header>  
+    
 
     <div class="card-body">
         <div>
              <h5 class="card-title"><%= description.nombre %></h5>
-             <h5 class="card-title"> <%= description.posicion %></h5>
-            <p class="card-text"><%= description.estatura + " metros" %> </p>
+             <h5 class="card-title"><%= description.email %></h5>
+             <h5 class="card-title"><%= description.telefon %></h5>
+             <h5 class="card-title"><%= description.edad%></h5>
+             <h5 class="card-title"><%= description.perfil %></h5>
+             <h5 class="card-title"><%= description.posicion %></h5>
+            <p class="card-text"> <%= description.estatura + " metros" %> </p>
        </div>
           <div>
            <a href="/manager" class="btn btn-danger">Volver</a>

@@ -1,134 +1,41 @@
 [
-  {
-    "id": 1,
-    "nombre": "roque",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "55555",
-    "estatura": "12",
-    "data": "2022-09-20",
-    "posicion": "portero",
-    "dominante": "Derecho",
-    "edad": "18 a 20"
-  },
-  {
-    "id": 2,
-    "nombre": "carlos",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "55555",
-    "estatura": "12",
-    "data": "2022-09-20",
-    "posicion": "portero",
-    "dominante": "Derecho",
-    "edad": "18 a 20"
-  },
-  {
-    "id": 4,
-    "nombre": "albeiro",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "55555",
-    "estatura": "12",
-    "data": "2022-09-20",
-    "posicion": "portero",
-    "dominante": "Derecho",
-    "edad": "18 a 20"
-  },
-  {
-    "id": 5,
-    "nombre": "albeiro",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "55555",
-    "estatura": "12",
-    "data": "2022-09-20",
-    "posicion": "portero",
-    "dominante": "Derecho",
-    "edad": "18 a 20"
-  },
-  {
-    "id": 6,
-    "nombre": "roque",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "44443",
-    "estatura": "4",
-    "data": "2022-10-24",
-    "posicion": "central",
-    "dominante": "Derecho",
-    "edad": "18 a 20"
-  },
-  {
-    "id": 7,
-    "nombre": "emanuel",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "333",
-    "estatura": "1",
-    "data": "2022-09-26",
-    "posicion": "portero",
-    "dominante": "Derecho",
-    "edad": "21 a 24"
-  },
-  {
-    "id": 8,
-    "nombre": "NEHEITAN",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "44444",
-    "estatura": "1",
-    "data": "2022-10-04",
-    "posicion": "extremo",
-    "dominante": "Izquierdo",
-    "edad": "13 a 17"
-  },
-  {
-    "id": 9,
-    "nombre": "ROBERTIÑO",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "4444",
-    "estatura": "1",
-    "data": "2022-10-18",
-    "posicion": "delantero",
-    "dominante": "Ambidiestro",
-    "edad": "18 a 20"
-  },
-  {
-    "id": 10,
-    "nombre": "CHATO ",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "44444",
-    "estatura": "1",
-    "data": "2022-10-11",
-    "posicion": "lateral",
-    "dominante": "Izquierdo",
-    "edad": "18 a 20"
-  },
-  {
-    "id": 11,
-    "nombre": "ABELARDO",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "343242525",
-    "estatura": "2",
-    "data": "2022-10-11",
-    "posicion": "central",
-    "dominante": "Derecho",
-    "edad": "21 a 24"
-  },
-  {
-    "id": 12,
-    "nombre": "LIAN",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "445363645",
-    "estatura": "1",
-    "data": "2022-10-18",
-    "posicion": "delantero",
-    "dominante": "Derecho",
-    "edad": "21 a 24"
-  },
-  {
-    "id": 13,
-    "nombre": "LIAN",
-    "email": "emanuelmj2007@gmail.com",
-    "telefono": "445363645",
-    "estatura": "1",
-    "data": "2022-10-18",
-    "posicion": "delantero",
-    "dominante": "Derecho",
-    "edad": "21 a 24"
-  }
+ {
+  "id": 1,
+  "nombre": "EMANUEL ",
+  "email": "emanuelmj2007@gmail.com",
+  "telefono": "55555",
+  "estatura": "12",
+  "data": "",
+  "posicion": "centro campista",
+  "dominante": "Derecho",
+  "edad": "18 a 20",
+  "video": "",
+  "imagen": ""
+ },
+ {
+  "id": 2,
+  "nombre": "Neithan Olaya Bueno ",
+  "email": "neithanmj2021@gmail.com",
+  "telefono": "34556282",
+  "estatura": "1",
+  "data": "",
+  "posicion": "delantero",
+  "dominante": "Izquierdo",
+  "edad": "13 a 17",
+  "video": "",
+  "imagen": ""
+ },
+ {
+  "id": 3,
+  "nombre": "roque  ",
+  "email": "emanuelmj2007@gmail.com",
+  "telefono": "467464884",
+  "estatura": "1.72",
+  "data": "",
+  "posicion": "centro campista",
+  "dominante": "Derecho",
+  "edad": "18 a 20",
+  "video": "",
+  "imagen": ""
+ }
 ]

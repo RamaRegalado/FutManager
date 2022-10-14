@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="/public/css/styles.css">
     <title>FutManager</title>
   </head>
   <body>
@@ -13,47 +13,51 @@
         
     </header> 
     
-    <div id="formulario">
+    <!-- enctype="multipart/form-data" NO DEJA FUNCIONAR EL REQ BODY EN ACTUALIZAR  --> 
+
+
+    <div id="">
         
-     
        <form  action="/editar/<%= editar.id%>?_method=PUT
-        " method="POST" enctype="multipart/form-data" id="accion">
+         " method="POST"  id="accion"> 
             <div >
             
                <label for="nombre">Nombre Completo:</label><br>
-               <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required="" value="<% editar.nombre %> "><br>      
+               <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required value="<%= editar.nombre%> "><br>      
+               
                <label for="email">E-mail:</label><br>
-               <input type="email" value="" id="email" name="email" placeholder="name@domain.com" required="" value="<% editar.email %> "><br>
+               <input type="email"  id="email" name="email" value="<%= editar.email%> " placeholder="name@domain.com" required ><br>
+               
                <label for="telefono">Numero de Teléfono:</label><br> 
-               <input type="number" name="telefono" pattern="[0-9]+" required="" id="numeros" placeholder="Télefono" value="<% editar.telefono %> "
-               minlength="6" maxlength="10">
+               <input type="number" name="telefono" pattern="[0-9]+" required id="numeros" placeholder="telefono" value="<%= editar.telefono%>" minlength="6" maxlength="10">
               <br>
-               <label for="estaura">Estatura:</label><br>
-               <input type="number"  name="estatura" placeholder="Estatura en Métros" required="" min="0" step="0.01">
+               
+              <label for="estatura">Estatura:</label><br>
+               <input type="number"  name="estatura" placeholder="Estatura en Métros" required min="0" step="0.01" value="<%= editar.estatura%>">
                <br>
                <br><label for="data">Fecha de Nacimiento</label><br>
-               <input type="date" name="data">
+               <input type="date" name="data" value="<%= editar.data%> ">
             </div> 
 
             <div id="select" >
               <label for="posicion">Elige tu posición:</label>
               <select name="posicion" >
                 <option disabled value="#">Seleccione posicion"</option>
-                 <option value="portero">Portero</option>
-                 <option value="central">Central</option>
-                 <option value="lateral">Lateral</option>
-                 <option value="centro campista">Centrocampista</option>
-                 <option value="extremo">Extremo</option>
-                 <option value="delantero">Delantero</option>
+                 <option value="portero"<%= editar.posicion == "portero" ? "selected" : "" %>>Portero</option>
+                 <option value="central" <%= editar.posicion == "central" ? "selected" : "" %>>Central</option>
+                 <option value="lateral"<%= editar.posicion == "lateral" ? "selected" : "" %>>Lateral</option>
+                 <option value="centro campista"<%= editar.posicion == "centro campista" ? "selected" : "" %>>Centrocampista</option>
+                 <option value="extremo"<%= editar.posicion== "extremo" ? "selected" : "" %>>Extremo</option>
+                 <option value="delantero"<%= editar.posicion == "delantero" ? "selected" : "" %>>Delantero</option>
 
                </select><br>
                                
                 <label for="dominante">Perfil Dominante:</label>
                 <select name="dominante" >
                     <option disabled value="#">Seleccione una opcion"</option>
-                  <option value="Derecho">Derecho</option>
-                  <option value="Izquierdo">Izquierdo</option>
-                  <option value="Ambidiestro">Ambidiestro</option>
+                  <option value="Derecho"<%= editar.Derecho == "Derecho" ? "selected" : "" %>>Derecho</option>
+                  <option value="Izquierdo"<%= editar.Izquierdo == "Izquierdo" ? "selected" : "" %>>Izquierdo</option>
+                  <option value="Ambidiestro"<%= editar.Ambidiestro == "Ambidiestro" ? "selected" : "" %>>Ambidiestro</option>
                 </select> <br>  
                  
 
@@ -61,9 +65,9 @@
                 <select  name="edad" value="<% editar.edad %> " >
                     <option disabled value="#">Seleccione un rango de edad"</option>
                     <option value="null">Elige</option>
-                  <option value="13 a 17">13 a 17</option>
-                    <option value="18 a 20">18 a 20</option>
-                    <option value="21 a 24">21 a 24</option>
+                  <option value="13 a 17"<%= editar.edad == "13 a 17" ? "selected" : "" %>>13 a 17</option>
+                    <option value="18 a 20"<%= editar.edad == "18 a 20" ? "selected" : "" %>>18 a 20</option>
+                    <option value="21 a 24"<%= editar.edad == "21 a 24" ? "selected" : "" %>>21 a 24</option>
                 </select><br>
                 <label for="video">Ingresa un Video</label><br>
                <input type="file" id="video" name="video" placeholder="subir video" value="" ><br> 
@@ -80,9 +84,10 @@
            
         
           <div class="form-group">
-            <button type="submit" class="btn btn btn-info">Actualizar</button>
+            
             <a href="/manager" class="btn btn-danger">Volver</a>
         </div>
+        <button type="submit">Actualizar</button>
         
         </form>
         

@@ -22,10 +22,10 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-const productController = require('../controller/controlerProduct');
+const productController = require('../controller/controlerDeportista');
 
-router.get('/formulario', productController.formulario);
-router.post('/formulario',upload.any("imagen"),productController.create);
+router.get('/formularioDeportista', productController.formulario);
+router.post('/formularioDeportista',upload.any("imagen"),productController.createDeportista);
 router.get('/manager', productController.manager);
 router.get("/deportistas/:id",productController.show);
 router.get("/editar/:id",productController.edit);

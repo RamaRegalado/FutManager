@@ -19,17 +19,17 @@
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/x9XC7pAyJGg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div> 
                  
-                   <form  action="/formulario" method="POST" enctype="multipart/form-data" id="accion">
+                   <form  action="/formularioDeportista" method="POST" enctype="multipart/form-data" id="accion">
                         <div >
                         
                            <label for="nombre">Nombre Completo:</label><br>
-                           <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required=""><br>      
+                           <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required><br>      
                            <label for="email">E-mail:</label><br>
-                           <input type="email" value="" id="email" name="email" placeholder="name@domain.com" required=""><br>
+                           <input type="email" value="" id="email" name="email" placeholder="name@domain.com" required><br>
                            <label for="telefono">Numero de Teléfono:</label><br> 
                            <input type="number" name="telefono" pattern="[0-9]+" required="" id="numeros" placeholder="Télefono" minlength="6" maxlength="10">
                           <br>
-                           <label for="estaura">Estatura:</label><br>
+                           <label for="estatura">Estatura:</label><br>
                            <input type="number"  name="estatura" placeholder="Estatura en Métros" required="" min="0" step="0.01">
                            <br>
                            <br><label for="data">Fecha de Nacimiento</label><br>
@@ -84,15 +84,7 @@
                 <!-- ---------------------FOOTER--------------------------- -->
             <footer>
               <%- include("parcial/footer.ejs")%>
-             <!-- <div id="footer"> 
-              <div id="redes">
-                   <a href="/"><img src="/images/futmanager_logo.png" width="120px" alt="Logo"></a>    
-                    
-                      <p><img src="/images/instagram.png" width="20px" height="20px" alt="Instagram" >Instagram</p>
-                      <p><img src="/images/linkedin.jpg" width="20px" height="20px"  alt="Linkedin" >Linkedin</p>
-                      <p><img src="/images/facebook.png" width="20px" height="20px" alt="Facebook" >Facebook</p>
-                    </div>
-              </div> -->
+             
             </footer>
             </body>
  </html>                 

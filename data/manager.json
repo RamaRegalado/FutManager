@@ -1,0 +1,21 @@
+[
+ {
+  "id": 1,
+  "nombre": "KEVIN RAMOS",
+  "email": "emanuelmj2007@gmail.com",
+  "password": "E555383"
+ },
+ {
+  "id": 2,
+  "nombre": "alberto",
+  "pais": "Colombia",
+  "ciudad": "candelaria",
+  "email": "emanuelmj2007@gmail.com",
+  "password": "alberto1567"
+ },
+ {
+  "id": 3,
+  "email": "emanuelmj2007@gmail.com",
+  "password": "albero1567"
+ }
+]

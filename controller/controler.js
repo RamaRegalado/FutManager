@@ -5,8 +5,10 @@ const { info } = require("console");
 
 
 const mainController = {
-  carrito: (req, res) => {
-    res.render("carrito");
+
+
+  index: (req, res) => {
+    res.render("home");
   },
 
   home: (req, res) => {
