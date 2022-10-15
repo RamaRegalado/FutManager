@@ -1,35 +1,33 @@
 var express = require('express');
 var router = express.Router();
-// const multer= require("multer");
+const{body,}=require("express-validator");
 const path = require('path');
 const fs=require("fs");
-//const validations = require('../validator/validateManager');
 
-// const storage= multer.diskStorage({
-
-//     destination:(res,file,cb)=>{
-
-// cb(null,path.join(__dirname, "public/images/imagenPerfil"))
-
-//     },
-
-//     filename:(res,file,cb)=>{
-//            console.log(file)
-//         //let newArchivo="images-"+ Date.now() + path.extname(file.originalname);
-
-//         cb(null, file.filename + "-" + Date.now() + path.extname(file.originalname) )
-//     }
-
-//  })
-
-//  const upload=multer({storage:storage})
 
 const managerController = require('../controller/controlerManager');
 
+validator= [
+	body('nombre').notEmpty().withMessage('Tienes que escribir un nombre'),
+    body('pais').notEmpty().withMessage('Tienes que elegir un país'),
+    body('ciudad').notEmpty().withMessage('Tienes que elegir un país'),
+	body('email')
+		.notEmpty().withMessage('Tienes que escribir un correo electrónico').bail()
+		.isEmail().withMessage('Debes escribir un formato de correo válido'),
+	body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
+ ]
+//,(req,res)=>{
+//     const errors = validationResult(req);
+//     if (!errors.isEmpty()) {
+//       //return 
+//       res.status(400).json({ errors: errors.array() });
+//       console.log(errors);
+//     }
+// }
 
 
 router.get('/registroManager', managerController.crearLogin);
-router.post('/registroManager', managerController.creatpost);
+router.post('/registroManager',validator, managerController.creatpost);
 router.get('/loginManager',managerController.login );
 
 module.exports = router;

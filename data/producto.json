@@ -37,5 +37,18 @@
   "edad": "18 a 20",
   "video": "",
   "imagen": ""
+ },
+ {
+  "id": 4,
+  "nombre": "alfonsina",
+  "email": "mimaj2007@gmail.com",
+  "telefono": "222222",
+  "estatura": "1.2",
+  "data": "",
+  "posicion": "extremo",
+  "dominante": "Derecho",
+  "edad": "18 a 20",
+  "video": "",
+  "imagen": ""
  }
 ]

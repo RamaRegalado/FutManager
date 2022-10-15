@@ -14,26 +14,34 @@
    
     </header>
     <!-- -----------------------BODY------------------------- -->
- 
-        <form action="/registroManager" method="POST" id="accion">
+           <% if(locals.errors)   {  
+           
+            errors.forEach(error => {%>
+            <p> <%= error.msg %>  </p>
+           <% })
+
+           } %>  
+
+        <form action="/registroManager" method="POST" id="accion"> 
+
               
             <div>
             <div><label for="nombre">Nombre</label><br>
-                <input type="text" name="nombre">
+                <input type="text" name="nombre" value="<%= locals.old && old.nombre ? old.nombre : " " %> ">
               </div>
               <div><label for="pais">Pais</label><br>
-                <input type="text" name="pais">
+                <input type="text" name="pais" value="<%= locals.old && old.pais ? old.pais : " " %> ">
               </div>
               <div><label for="ciudad">Ciudad</label><br>
-                <input type="text" name="ciudad">
+                <input type="text" name="ciudad" value="<%= locals.old && old.ciudad ? old.ciudad : " " %> ">
               </div>
                <div >
                 <label for="email">Email address</label><br>
-                <input type="email" class="" id="" name="email" placeholder="Enter email">
+                <input type="email" class="" id="" name="email" placeholder="Enter email" value="<%= locals.old && old.email ? old.email : " " %> ">
                 </div><br>
                
                 <div>
-                  <input type="password" class="" name="password" placeholder="Password">
+                  <input type="password" class="" name="password" placeholder="Password" value="<%= locals.password && old.password ? old.password: " " %> ">
                </div><br>
               <button type="submit">enviar</button>
             </div>
