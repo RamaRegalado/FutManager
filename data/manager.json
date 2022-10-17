@@ -1,61 +1,28 @@
 [
  {
   "id": 1,
-  "nombre": "KEVIN RAMOS",
+  "nombre": "   roque",
+  "pais": "Colombia",
+  "ciudad": "candelaria",
   "email": "emanuelmj2007@gmail.com",
-  "password": "E555383"
+  "password": "123456ytr"
  },
  {
   "id": 2,
-  "nombre": "alberto",
+  "full-name": "  naithan bueno",
   "pais": "Colombia",
   "ciudad": "candelaria",
   "email": "emanuelmj2007@gmail.com",
-  "password": "alberto1567"
- },
- {
-  "id": 3,
-  "email": "emanuelmj2007@gmail.com",
-  "password": "albero1567"
- },
- {
-  "id": 4,
-  "nombre": "",
-  "pais": "",
-  "ciudad": "",
-  "email": "",
-  "password": ""
- },
- {
-  "id": 5,
-  "nombre": "roque",
-  "pais": "Colombia",
-  "ciudad": "candelaria",
-  "email": "emanuelmj2007@gmail.com",
-  "password": "mimanury"
- },
- {
-  "id": 6,
-  "nombre": " RRRR",
-  "pais": "Colombia",
-  "ciudad": "candelaria",
-  "email": "emanuelmj2007@gmail.com",
-  "password": "12345"
- },
- {
-  "id": 7,
-  "nombre": " RRRR",
-  "pais": "Colombia",
-  "ciudad": "candelaria",
-  "email": "emanuelmj2007@gmail.com",
-  "password": "768578585"
- },
- {
-  "id": 8,
-  "nombre": " cartago   ",
-  "pais": "Colombia ",
-  "ciudad": "cali ",
-  "email": "emanuelmj2007@gmail.com",
-  "password": "er5a6dkdo"
+  "password": "35436537",
+  "file": {
+   "fieldname": "avatar",
+   "originalname": "IMG-20201205-WA0038.jpg",
+   "encoding": "7bit",
+   "mimetype": "image/jpeg",
+   "destination": "./public/avatar",
+   "filename": "1666038601455_img.jpg",
+   "path": "public\\avatar\\1666038601455_img.jpg",
+   "size": 35371
+  }
  }
 ]

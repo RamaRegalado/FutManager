@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RamaRegalado/GRUPO-10#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parse": "^0.1.0",
     "body-parser": "^1.20.0",
     "cookie-parser": "^1.4.6",

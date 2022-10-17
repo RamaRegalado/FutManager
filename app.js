@@ -12,7 +12,7 @@ app.set("view engine","ejs");
 
 
 app.use(bodyParser.json());
-app.use(express.urlencoded({extended:false}));// {extended:false}convierte datos a json
+app.use(express.urlencoded({extended:false}));//enviar datos por post {extended:false}convierte datos a json envi
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname,"public")));

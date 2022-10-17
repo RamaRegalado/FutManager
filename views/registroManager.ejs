@@ -14,48 +14,65 @@
    
     </header>
     <!-- -----------------------BODY------------------------- -->
-           <% if(locals.errors)   {  
-           
-            errors.forEach(error => {%>
-            <p> <%= error.msg %>  </p>
-           <% })
+    
+    <% if(locals.errors)   { %>
+      <% for(let oneError in errors )  {%> 
+      
+      <p> <%= errors[oneError].msg %>  </p>
+     <% } %>
 
-           } %>  
+     <% } %>        
 
-        <form action="/registroManager" method="POST" id="accion"> 
-
-              
+        <form action="/registroManager" method="POST" enctype="multipart/form-data"    id="accion"> 
+          <div>
             <div>
-            <div><label for="nombre">Nombre</label><br>
-                <input type="text" name="nombre" value="<%= locals.old && old.nombre ? old.nombre : " " %> ">
-              </div>
+              <label for="full-name">nombre</label><br>
+              <input type="text" class="" id="" name="full-name" placeholder="nombre completo" value="<%= locals.old && old.nombre ? old.nombre : " " %> ">
+              
+              </div><br>
+          
+            
+               
               <div><label for="pais">Pais</label><br>
                 <input type="text" name="pais" value="<%= locals.old && old.pais ? old.pais : " " %> ">
               </div>
+              
               <div><label for="ciudad">Ciudad</label><br>
-                <input type="text" name="ciudad" value="<%= locals.old && old.ciudad ? old.ciudad : " " %> ">
-              </div>
-               <div >
+                <input type="text" name="ciudad"  value="<%= locals.old && old.ciudad ? old.ciudad : " " %> ">
+								
+              </div><br>
+               
+              <div >
                 <label for="email">Email address</label><br>
-                <input type="email" class="" id="" name="email" placeholder="Enter email" value="<%= locals.old && old.email ? old.email : " " %> ">
+                <input type="email" class="" id="" name="email" 
+                placeholder="Enter email" 
+                value="<%= locals.old && old.email ? old.email : " " %> ">
+               
+								
                 </div><br>
                
                 <div>
-                  <input type="password" class="" name="password" placeholder="Password" value="<%= locals.password && old.password ? old.password: " " %> ">
+                  <label for="password">password<br>
+                  <input type="password" name="password" value="<%= locals.old && old.password ? old.password : "" %>" >
                </div><br>
+
+               
+
+               <div>
+                <label for="avatar">Ingresa foto</label><br>
+                 <input type="file" id="foto" name="avatar" value="<%= locals.errors && old.avatar ? old.avatar : " " %>"  placeholder="subir foto" ><br> 
+               </div>
+
               <button type="submit">enviar</button>
+            
             </div>
         </form>
      
+
+    
+             <footer>
+              <%- include("parcial/footer.ejs")%>
         
-
-
-
-
-    <!-- ---------------------FOOTER--------------------------- -->
-    <footer>
-        <%- include("parcial/footer.ejs")%>
-        
-       </footer>
-       </body>
+              </footer>
+    </body>
 </html>
